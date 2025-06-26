@@ -1,36 +1,20 @@
-# Decision Tree from Scratch in Python
+# Decision Tree Regression from Scratch
 
-This repository contains a clean and minimal implementation of the Decision Tree algorithm from scratch using only Python and NumPy. It is intended for educational purposes to understand how decision trees work internally without using libraries like scikit-learn.
+This project implements a **Decision Tree Regressor** from scratch in Python without using any machine learning libraries like scikit-learn. The goal is to understand the fundamentals of decision tree regression, including how trees are built recursively based on minimizing variance.
 
----
+## 📌 Features
 
-## 📁 Contents
+- Built using only NumPy and basic Python
+- Supports recursive tree building based on variance reduction
+- Predicts continuous target variables (regression)
+- Handles stopping criteria like max depth and minimum samples
+- Clear and educational code structure for learning purposes
 
-| File Name                  | Description |
-|---------------------------|-------------|
-| `decision_tree.py`        | Core implementation of the Decision Tree algorithm. |
-| `classification_demo.py` | Example of using the decision tree for classification. |
-| `regression_demo.py`     | Example of using the decision tree for regression. |
-| `utils.py` (optional)     | Helper functions for metrics, data splitting, etc. |
+## 🧠 What is Decision Tree Regression?
 
-*(Rename as per your files — I can adjust this table if you share actual filenames.)*
+Decision Tree Regression is a supervised learning algorithm that predicts continuous values by learning decision rules inferred from the data features. It splits the dataset into smaller subsets while at the same time an associated decision tree is incrementally developed.
 
----
+The goal at each node:
+- Find the feature and threshold that splits the data into two groups such that the variance (MSE) is minimized.
 
-## 🚀 Features
 
-- Built entirely from scratch using NumPy
-- Supports both classification and regression trees
-- Gini impurity & information gain for classification
-- Mean squared error for regression
-- Recursive tree-building with max depth and min samples control
-- No external machine learning libraries used
-
----
-
-## ▶️ How to Run
-
-Clone the repository and run:
-
-```bash
-python classification_demo.py
